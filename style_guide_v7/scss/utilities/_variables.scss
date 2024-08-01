@@ -1,0 +1,78 @@
+// Descriptive Colors Values
+$white: #fff;
+$seaweed-green: #2E8B57;
+$sand-beige: #F5DEB3;
+$gray: #777;
+$pale-violet-red: #d174a8;
+$yellow: #FFD700;
+$turquoise: #70D1D3;
+$red: #E34234;
+$purple: #800080;
+$forest-green: #228b22;
+$navy-blue: #000080;
+$deep-purple: #673ab7;
+$grid-hover: lighten($deep-purple,15%);
+$charcoal-gray: #36454f;
+$olive-green: #808000;
+$teal: #008080;
+$mint-green: #98ff98;
+$dark-brown: #654321;
+$burnt-orange: #cc5500;
+$royal-blue: #4169e1;
+$plum: #dda0dd;
+
+//Functional Color Variables
+
+$color-text-base: $gray;
+$accents: $yellow;
+$headline-prim: $red;
+$link-color: $seaweed-green;
+
+
+// Nav
+$nav-text: $gray;
+$nav-hover: $yellow;
+
+
+//Images
+$img-border: $red;
+
+//Input
+$input-border: $red;
+
+
+//Buttons
+$btn-text-color: $white;
+$btn-default: $yellow;
+$btn-error: $red;
+$btn-info: $sand-beige;
+$btn-success: $turquoise;
+$btn-warning: $purple;
+
+//Button Map
+$buttons: (
+  default: $btn-default,
+  error: $btn-error,
+  info: $btn-info,
+  success: $btn-success,
+  warning: $btn-warning,
+  ) ;
+
+//Theme Colors Map
+  $theme-colors: (
+    col-1: $forest-green,
+    col-2: $navy-blue,
+    col-3: $deep-purple,
+    col-4: $charcoal-gray,
+    col-5: $olive-green,
+    col-6: $teal,
+    col-7: $mint-green,
+    col-8: $dark-brown,
+    col-9: $burnt-orange,
+    col-10: $royal-blue,
+    col-11: $turquoise,
+    col-12: $plum,
+  );
+
+  //Media Query
+  $breakpoint-medium: 768px;

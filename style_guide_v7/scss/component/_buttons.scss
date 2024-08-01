@@ -1,0 +1,15 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+  margin-top: 15px;
+  width: 100%;
+  @include button-style($btn-default, $btn-text-color, 10px 0, 5px);
+}
+
+@each $class, $color in $buttons {
+  .#{$class} {
+    background-color: $color;
+  }
+}

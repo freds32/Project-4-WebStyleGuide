@@ -1,0 +1,48 @@
+// Mixins
+
+@mixin transition($properties...) {
+  transition: $properties;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin box-sizing {
+  box-sizing: border-box;
+
+}
+
+@mixin flex($direction: row, $wrap: nowrap, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin button-style($bg-color, $text-color: $white, $padding: 10px 30px, $radius: 5px) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  padding: $padding;
+  text-transform: uppercase;
+  @include border-radius($radius);
+  cursor: pointer;
+  @include transition(background-color 0.3s ease, color 0.3s ease);
+  &:hover {
+    background-color: darken($bg-color, 50%);
+  }
+}
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == medium {
+    @media (min-width: $breakpoint-medium) { @content; }
+  }
+}
