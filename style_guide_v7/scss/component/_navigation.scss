@@ -6,19 +6,20 @@
   padding-left: 0;
   flex-basis: 100%;
   @include flex(column)
-}
-
-.nav-link {
-  text-align: center;
-  @include border-radius(5px);
-  padding: 10px 0;
-  display: block;
-  width: 100%;
-  @include transition(background-color 0.2s ease-in-out, color 0.2s ease-in-out);
-}
 
 
-.nav-link:hover {
-  color: $nav-text;
-  background-color: $nav-hover;
+  &-link {
+    text-align: center;
+    @include border-radius(5px);
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    @include transition(background-color 0.2s ease-in-out, color 0.2s ease-in-out);
+
+
+  &:hover {
+    color: $nav-text;
+    background-color: $nav-hover;
+    }
+  }
 }
