@@ -8,8 +8,8 @@
   @include button-style($btn-default, $btn-text-color, 10px 0, 5px);
 }
 
-@each $class, $color in $buttons {
-  .#{$class} {
-    background-color: $color;
+@each $name, $color in $buttons {
+  .btn-#{$name} {
+    @include button-style($color);
   }
 }
